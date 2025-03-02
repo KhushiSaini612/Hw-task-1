@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            background-color: #b3e5fc;
+            justify-content: center;
+            align-items: center;
+        }
+        .header,.footer{
+            background-color: #00897b;
+            color: white;
+            padding: 20px;
+            font-size: 20px;
+            text-align: center;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            row-gap: 10px;
+        }
+        .main{
+            display: flex;
+            height: 350px;
+            column-gap: 10px;
+        }
+        .aside{
+            background-color: #66bb6a;
+            color: white;
+            padding: 30px;
+            font-size: 20px;
+            flex-grow: 1;
+            text-align: center;
+            padding-top: 130px;
+        }
+        .article{
+            background-color: #ffa726;
+            color: white;
+            padding: 15px;
+            font-size: 20px;
+            flex-grow: 3;
+            display: flex;
+            flex-direction: column;
+            padding-top: 130px;
+            text-align: center;
+        }
+        .images{
+            display: flex;
+            justify-content: space-evenly;
+            flex-grow: 1;
+            align-items: flex-end;
+            column-gap: 10px;
+        }
+        .image{
+            background-color: #ffca28;
+            flex-grow: 1;
+            font-size: 20px;
+            color: white;
+            height: 100px;
+            width: 100px;
+            text-align: center;
+            padding-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">Header</header>
+        <div class="main">
+            <aside class="aside">Aside</aside>
+            <article class="article">Article
+                <div class="images">
+                    <div class="image">Image</div>
+                    <div class="image">Image</div>
+                    <div class="image">Image</div>
+                </div>
+            </article>
+        </div>
+        <footer class="footer">Footer</footer>
+    </div>
+</body>
+</html>
